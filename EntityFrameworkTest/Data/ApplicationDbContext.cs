@@ -16,6 +16,9 @@ namespace EntityFrameworkTest.Data
         // sponsor.cs will map to the sponsors table
         public DbSet<Sponsor> Sponsors { get; set; } 
 
+        // school.cs will map to the schools table
+        public DbSet<School> Schools { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
